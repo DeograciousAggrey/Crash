@@ -1,0 +1,9 @@
+<h1>Hi, {{ user.username }}</h1>
+<p>Change mail from <b>{{ user.email }}</b> on the <b>{{ confirmation.email }}</b></p>
+<p>Follow the confirmation link: 
+    <a href="{{ baseUrl }}/user/confirmation/{{ confirmation.token }}">{{ baseUrl }}/user/confirmation/{{ confirmation.token }}</a>
+</p>
+<br />
+<p>If you have not submitted an application, then ignore the letter and change your account password.</p>
+<br />
+<p>Sincerely, the Waipesa team.</p>
