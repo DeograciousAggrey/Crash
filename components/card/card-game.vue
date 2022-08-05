@@ -2,7 +2,8 @@
   <div
     class="card-game"
     :class="{
-      'cursor-not-allowed pointer-events-none select-none filter-grayscale': disabled,
+      'cursor-not-allowed pointer-events-none select-none filter-grayscale':
+        disabled,
     }"
   >
     <h3 class="card-game__title">

@@ -15,8 +15,8 @@
         </svg>
         <div class="flex-1 text-white">
           <template v-if="timeout <= 0">
-            <div class="font-semibold leading-none">15 минут</div>
-            <div class="text-xs">перезарядка</div>
+            <div class="font-semibold leading-none">15 minutes</div>
+            <div class="text-xs">recharge</div>
           </template>
           <template v-else>
             <div class="text-3xl font-semibold leading-none">{{ timer }}</div>
@@ -27,7 +27,7 @@
           variant="primary"
           :disabled="timeout > 0"
           @click="submit"
-          >Крутить колесо</t-button
+          >spin the wheel</t-button
         >
       </div>
     </div>
@@ -57,20 +57,8 @@ export default {
       type: Array,
       required: false,
       default: () => [
-        0.01,
-        0.03,
-        0.05,
-        0.1,
-        0.15,
-        0.18,
-        0.2,
-        0.01,
-        0.03,
-        0.05,
-        0.1,
-        0.15,
-        0.18,
-        0.2,
+        0.01, 0.03, 0.05, 0.1, 0.15, 0.18, 0.2, 0.01, 0.03, 0.05, 0.1, 0.15,
+        0.18, 0.2,
       ],
     },
   },

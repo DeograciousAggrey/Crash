@@ -7,19 +7,19 @@
             <use xlink:href="/img/icon/free/sprite.svg#close"></use>
           </svg>
         </button>
-        <h1 class="sidebar__title">МЕНЮ</h1>
+        <h1 class="sidebar__title">MENU</h1>
         <nav class="sidebar__nav">
           <nuxt-link
             :to="{ name: 'help' }"
             class="sidebar__link"
             :exact-active-class="`sidebar__link--active`"
-            >Помощь</nuxt-link
+            >Help</nuxt-link
           >
           <nuxt-link
             :to="{ name: 'free-coins' }"
             class="sidebar__link"
             :exact-active-class="`sidebar__link--active`"
-            >Бесплатные монеты</nuxt-link
+            >Free coins</nuxt-link
           >
         </nav>
       </div>

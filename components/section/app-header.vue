@@ -103,11 +103,11 @@
 </template>
 
 <script>
+import UserBalance from '../user/user-balance.vue'
+import AppSidebar from './app-sidebar.vue'
 import EditIcon from '@/static/img/icon/edit.svg?inline'
 import LogoutIcon from '@/static/img/icon/logout.svg?inline'
 import AppLanguageSwitcher from '@/components/ui/app-language-switcher.vue'
-import UserBalance from '../user/user-balance.vue'
-import AppSidebar from './app-sidebar.vue'
 
 export default {
   components: {

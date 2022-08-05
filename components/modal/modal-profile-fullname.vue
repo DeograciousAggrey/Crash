@@ -39,11 +39,11 @@
     </form>
     <form @submit.prevent="updateUser('last_name')">
       <label>
-        <span class="block mb-2 opacity-80">Ваша фамилия</span>
+        <span class="block mb-2 opacity-80">Your last name</span>
         <div class="relative">
           <t-input
             v-model="user.last_name"
-            placeholder="Введите фамилию"
+            placeholder="Enter last name"
             class="w-full pl-12"
           ></t-input>
           <img

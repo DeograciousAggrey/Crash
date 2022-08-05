@@ -56,7 +56,7 @@
               type="button"
               variant="outline"
               @click="bet.amount += 100000"
-              >Все</t-button
+              >Max</t-button
             >
           </div>
           <label class="mb-3 font-semibold text-md" for="auto">{{

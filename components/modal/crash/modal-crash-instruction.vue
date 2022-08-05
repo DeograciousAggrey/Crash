@@ -6,22 +6,22 @@
       </svg>
     </template>
     <template #header>
-      <h3>Как играть</h3>
+      <h3>How to play</h3>
     </template>
     <div v-show="step === 1">
       <p>
-        Введите сумму ставки и значение автовывода (по желанию) – при выбранном
-        автовыводе вы автоматически заберете выигрыш по достижению указанного
-        коэффициента.
+        Enter the amount of the bet and the value of auto-withdrawal (optional)
+        - with the selected auto-withdrawal, you will automatically collect the
+        winnings upon reaching the specified coefficient.
       </p>
     </div>
     <div v-show="step === 2">
-      <p>Нажмите «Сделать ставку» и следите за ростом графика.</p>
+      <p>Click "Place a bet" and watch the graph grow.</p>
     </div>
     <div v-show="step === 3">
       <p>
-        Нажмите кнопку «Забрать» до того, как график обрушится и деньги сгорят,
-        или заберите их с помощью автовывода.
+        Press the "Collect" button before the graph collapses and the money is
+        burned, or pick them up using auto-withdrawal.
       </p>
     </div>
     <div class="flex items-center flex-wrap mt-3 space-x-3">
@@ -36,11 +36,11 @@
       <t-button class="flex-1" variant="primary" @click="nextStep">
         <div class="flex items-center justify-center">
           <template v-if="step < 3">
-            <span class="hidden md:inline-block"> Следующий шаг </span>
-            <span class="md:hidden"> Далее </span>
+            <span class="hidden md:inline-block"> The next step </span>
+            <span class="md:hidden"> Further </span>
           </template>
           <template v-else>
-            <span> Начать зарабывать! </span>
+            <span> Start earning! </span>
           </template>
           <svg class="w-5 h-3 ml-2">
             <use xlink:href="/img/icon/free/sprite.svg#arr-next"></use>
